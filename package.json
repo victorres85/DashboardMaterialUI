@@ -1,6 +1,7 @@
 {
   "name": "dashboard",
   "version": "0.1.0",
+  "homepage": "https://victorres85.github.io/DashboardMaterialUI/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -20,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "gh-pages": "^4.0.0",
+    "netlify-cli": "^10.7.0"
   }
 }
